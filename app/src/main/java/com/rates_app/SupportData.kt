@@ -1,7 +1,7 @@
 package com.rates_app
 
 class SupportData {
-    val apiKey = "4b965ad877dbab654b4f65dd"
+    val apiKey = "api key"
     var imageList: Array<Int> = arrayOf(
         R.drawable.united_states_,
         R.drawable.european_union,

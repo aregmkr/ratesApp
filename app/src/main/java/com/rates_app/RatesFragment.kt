@@ -15,7 +15,7 @@ import com.rates_app.databinding.FragmentRatesBinding
 import kotlinx.coroutines.launch
 
 class RatesFragment : Fragment() {
-    private val apiKey = "4b965ad877dbab654b4f65dd"
+    private val apiKey = "api key"
     private var _binding: FragmentRatesBinding? = null
     private val binding get() = _binding!!
     private lateinit var listForAdapter: ArrayList<CurrencyDataClass>
