@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.First_with_api" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:statusBarColor">@color/background_color</item>
+    </style>
+
+    <style name="Theme.First_with_api" parent="Base.Theme.First_with_api" />
+</resources>

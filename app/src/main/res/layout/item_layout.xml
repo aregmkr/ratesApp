@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivFlag"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/flag_armenia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvFromCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMD"
+            android:textSize="20sp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFlag"
+            app:layout_constraintStart_toEndOf="@+id/ivFlag"
+            app:layout_constraintTop_toTopOf="@+id/ivFlag" />
+
+        <TextView
+            android:id="@+id/tvTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="20dp"
+            android:visibility="visible"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFromCode"
+            app:layout_constraintStart_toEndOf="@+id/tvFromCode"
+            app:layout_constraintTop_toTopOf="@+id/tvFromCode" />
+
+        <TextView
+            android:id="@+id/tvToCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTo"
+            app:layout_constraintStart_toEndOf="@id/tvTo"
+            app:layout_constraintTop_toTopOf="@+id/tvTo" />
+
+        <TextView
+            android:id="@+id/tvRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="380"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvFromCode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvFromCode" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
